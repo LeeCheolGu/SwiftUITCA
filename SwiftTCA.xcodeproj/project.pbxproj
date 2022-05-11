@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AF7EC697460717A25681130 /* Pods_SwiftTCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51108E956E1E4A3301711276 /* Pods_SwiftTCA.framework */; };
+		4C001E58282A494F00539C84 /* SwiftTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C001E57282A494F00539C84 /* SwiftTCAApp.swift */; };
+		4C001E5A282A494F00539C84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C001E59282A494F00539C84 /* ContentView.swift */; };
+		4C001E5C282A495000539C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C001E5B282A495000539C84 /* Assets.xcassets */; };
+		4C001E5F282A495000539C84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C001E5E282A495000539C84 /* Preview Assets.xcassets */; };
+		4C001E61282A495000539C84 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C001E60282A495000539C84 /* Persistence.swift */; };
+		4C001E64282A495000539C84 /* SwiftTCA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C001E62282A495000539C84 /* SwiftTCA.xcdatamodeld */; };
+		4C001E6C282A4A5700539C84 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4C001E6B282A4A5700539C84 /* ComposableArchitecture */; };
+		4CA60419282B978A00906399 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA60418282B978A00906399 /* LoginView.swift */; };
+		4CA6041D282B986900906399 /* LoginCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6041C282B986900906399 /* LoginCore.swift */; };
+		4CA6041F282B9BFB00906399 /* ContentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6041E282B9BFB00906399 /* ContentCore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C001E54282A494F00539C84 /* SwiftTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C001E57282A494F00539C84 /* SwiftTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTCAApp.swift; sourceTree = "<group>"; };
+		4C001E59282A494F00539C84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C001E5B282A495000539C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C001E5E282A495000539C84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C001E60282A495000539C84 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4C001E63282A495000539C84 /* SwiftTCA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftTCA.xcdatamodel; sourceTree = "<group>"; };
+		4CA60418282B978A00906399 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4CA6041C282B986900906399 /* LoginCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCore.swift; sourceTree = "<group>"; };
+		4CA6041E282B9BFB00906399 /* ContentCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCore.swift; sourceTree = "<group>"; };
+		51108E956E1E4A3301711276 /* Pods_SwiftTCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		894A6F92037F8071F795CB1E /* Pods-SwiftTCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTCA.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTCA/Pods-SwiftTCA.debug.xcconfig"; sourceTree = "<group>"; };
+		A8C58C186AE77479064F454A /* Pods-SwiftTCA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTCA.release.xcconfig"; path = "Target Support Files/Pods-SwiftTCA/Pods-SwiftTCA.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C001E51282A494F00539C84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C001E6C282A4A5700539C84 /* ComposableArchitecture in Frameworks */,
+				3AF7EC697460717A25681130 /* Pods_SwiftTCA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D8538B9EF108F581538F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51108E956E1E4A3301711276 /* Pods_SwiftTCA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4904D00133FB3D52E7D3C900 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				894A6F92037F8071F795CB1E /* Pods-SwiftTCA.debug.xcconfig */,
+				A8C58C186AE77479064F454A /* Pods-SwiftTCA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C001E4B282A494F00539C84 = {
+			isa = PBXGroup;
+			children = (
+				4C001E56282A494F00539C84 /* SwiftTCA */,
+				4C001E55282A494F00539C84 /* Products */,
+				4904D00133FB3D52E7D3C900 /* Pods */,
+				46D8538B9EF108F581538F14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C001E55282A494F00539C84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C001E54282A494F00539C84 /* SwiftTCA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C001E56282A494F00539C84 /* SwiftTCA */ = {
+			isa = PBXGroup;
+			children = (
+				4CA60417282B977200906399 /* Login */,
+				4C001E57282A494F00539C84 /* SwiftTCAApp.swift */,
+				4C001E59282A494F00539C84 /* ContentView.swift */,
+				4CA6041E282B9BFB00906399 /* ContentCore.swift */,
+				4C001E5B282A495000539C84 /* Assets.xcassets */,
+				4C001E60282A495000539C84 /* Persistence.swift */,
+				4C001E62282A495000539C84 /* SwiftTCA.xcdatamodeld */,
+				4C001E5D282A495000539C84 /* Preview Content */,
+			);
+			path = SwiftTCA;
+			sourceTree = "<group>";
+		};
+		4C001E5D282A495000539C84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C001E5E282A495000539C84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CA60417282B977200906399 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4CA60418282B978A00906399 /* LoginView.swift */,
+				4CA6041C282B986900906399 /* LoginCore.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C001E53282A494F00539C84 /* SwiftTCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C001E67282A495000539C84 /* Build configuration list for PBXNativeTarget "SwiftTCA" */;
+			buildPhases = (
+				800E47339845F7C210A975A4 /* [CP] Check Pods Manifest.lock */,
+				4C001E50282A494F00539C84 /* Sources */,
+				4C001E51282A494F00539C84 /* Frameworks */,
+				4C001E52282A494F00539C84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTCA;
+			packageProductDependencies = (
+				4C001E6B282A4A5700539C84 /* ComposableArchitecture */,
+			);
+			productName = SwiftTCA;
+			productReference = 4C001E54282A494F00539C84 /* SwiftTCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C001E4C282A494F00539C84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					4C001E53282A494F00539C84 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C001E4F282A494F00539C84 /* Build configuration list for PBXProject "SwiftTCA" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C001E4B282A494F00539C84;
+			packageReferences = (
+				4C001E6A282A4A5700539C84 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 4C001E55282A494F00539C84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C001E53282A494F00539C84 /* SwiftTCA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C001E52282A494F00539C84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C001E5F282A495000539C84 /* Preview Assets.xcassets in Resources */,
+				4C001E5C282A495000539C84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		800E47339845F7C210A975A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftTCA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C001E50282A494F00539C84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA6041D282B986900906399 /* LoginCore.swift in Sources */,
+				4C001E61282A495000539C84 /* Persistence.swift in Sources */,
+				4C001E5A282A494F00539C84 /* ContentView.swift in Sources */,
+				4C001E64282A495000539C84 /* SwiftTCA.xcdatamodeld in Sources */,
+				4CA60419282B978A00906399 /* LoginView.swift in Sources */,
+				4C001E58282A494F00539C84 /* SwiftTCAApp.swift in Sources */,
+				4CA6041F282B9BFB00906399 /* ContentCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C001E65282A495000539C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C001E66282A495000539C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C001E68282A495000539C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894A6F92037F8071F795CB1E /* Pods-SwiftTCA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftTCA/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.Cheolgu.SwiftTCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C001E69282A495000539C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C58C186AE77479064F454A /* Pods-SwiftTCA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftTCA/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.Cheolgu.SwiftTCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C001E4F282A494F00539C84 /* Build configuration list for PBXProject "SwiftTCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C001E65282A495000539C84 /* Debug */,
+				4C001E66282A495000539C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C001E67282A495000539C84 /* Build configuration list for PBXNativeTarget "SwiftTCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C001E68282A495000539C84 /* Debug */,
+				4C001E69282A495000539C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C001E6A282A4A5700539C84 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C001E6B282A4A5700539C84 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C001E6A282A4A5700539C84 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4C001E62282A495000539C84 /* SwiftTCA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C001E63282A495000539C84 /* SwiftTCA.xcdatamodel */,
+			);
+			currentVersion = 4C001E63282A495000539C84 /* SwiftTCA.xcdatamodel */;
+			path = SwiftTCA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C001E4C282A494F00539C84 /* Project object */;
+}

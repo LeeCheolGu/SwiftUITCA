@@ -1,0 +1,6 @@
+framework module Pods_SwiftTCA {
+  umbrella header "Pods-SwiftTCA-umbrella.h"
+
+  export *
+  module * { export * }
+}
