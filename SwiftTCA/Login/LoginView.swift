@@ -46,12 +46,13 @@ struct LoginView: View {
                 
                 VStack {
                     Button {
+                        viewStore.send(.loginCheck(id, password))
                         isAlert.toggle()
                     } label: {
                         Text("로그인")
                             .foregroundColor(Color.black)
                     }
-                    .frame(width: 300, height: 70)
+                    .frame(width: 280, height: 70)
                     .background(Color.white)
                     .cornerRadius(20)
                     .overlay(
@@ -61,7 +62,7 @@ struct LoginView: View {
                 }
                 .padding(.top, 20)
                 .alert(isPresented: $isAlert) {
-                    Alert(title: Text("Hello"), message: Text("환영합니다"))
+                    Alert(title: Text("\(viewStore.alertText)"), message: Text("\(viewStore.alertBodyText)"))
                 }
                 
             }
