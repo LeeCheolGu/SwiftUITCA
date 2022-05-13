@@ -54,10 +54,14 @@ let LoginReducer = Reducer<LoginState, LoginAction, LoginEnvironment>.combine(
             } else {
                 state.alertText = "로그인 성공!"
                 state.alertBodyText = "환영합니다."
+                if id == "hello" && pw == "1234" {
+                    state.isAlert = true
+                } else {
+                    state.alertText = "아이디 또는 비밀번호가 잘못되었습니다."
+                    state.alertBodyText = "정확하게 입력해주세요."
+                }
             }
-            if id == "hello" && pw == "1234" {
-                state.isAlert = true
-            }
+
             return .none
         }
     }
