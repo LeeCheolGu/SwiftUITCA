@@ -15,13 +15,17 @@ import ComposableArchitecture
 
 enum ContentState: Equatable {
     case login(LoginState)
-    
-    public init() { self = .login(.init())}
+    case main(MainState)
+    public init() {
+        self = .login(.init())
+        self = .main(.init())
+    }
 }
 
 // MARK: - Action
 enum ContentAction: Equatable {
     case login(LoginAction)
+    case main(MainAction)
 }
 
 // MARK: - Environment
@@ -42,9 +46,17 @@ let ContentReducer = Reducer<ContentState, ContentAction, ContentEnvironment>.co
             LoginEnvironment(mainQueue: $0.mainQueue)
         }
     ),
+    MainReducer.pullback(
+        state: /ContentState.main,
+        action: /ContentAction.main,
+        environment: {
+            MainEnvironment(mainQueue: $0.mainQueue)
+    }),
     Reducer { state, action, _  in
         switch action {
         case .login:
+            return .none
+        case .main:
             return .none
         }
     }

@@ -20,6 +20,9 @@ struct ContentView: View {
             CaseLet(state: /ContentState.login, action: ContentAction.login) { store in
                 LoginView(store: store)
             }
+            CaseLet(state: /ContentState.main, action: ContentAction.main) { store in
+                MainView(store: store)
+            }
         }
     }
 }
